@@ -1,0 +1,517 @@
+$colorIcons: #FFFFFF;
+$azulMarca: #3A4EA5;
+$azulMarcaClaro: #4058C2;
+$bgHome: #FFFFFF;
+
+@import "./mixins";
+
+.pdexgroup__home {
+
+    position: relative;
+    z-index: 0;
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    background-color: $bgHome;
+    
+    // background-image: url("../images/front-background/background.png");
+    // background-size:auto;
+    // background-position: center center;
+    // background-repeat: no-repeat;
+
+    &::before {
+        content: "";
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(90deg, #3A4EA5, rgba(0,0,0,.15) 90%);
+    }
+
+    &-background {
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        width: 12rem;
+    }
+
+    &-image-background {
+        position: absolute;
+        z-index: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 100%;
+        object-fit: cover;
+        animation: homeBgMove 30s linear infinite;
+
+        @keyframes homeBgMove {
+            0% {
+                left: 0;
+            } 100% {
+                left: -135%;
+            }
+        }
+    }
+
+    &-content {
+
+        position: relative;
+        z-index: 2;
+        width: 100%;
+        min-width: 320px;
+        height: auto;
+        padding: 4rem 0;
+        display: flex;
+        flex-direction: column;
+
+        &-info {
+            width: 90%;
+            min-width: 288px;
+            height: auto;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+
+            &-logo {
+                width: 100%;
+                height: auto;
+                display: flex;
+                justify-content: flex-start;
+
+                & img {
+                    width: 180px;
+                    height: auto;
+                    object-fit: contain;
+                }
+            }
+
+            &-icons {
+                width: 100%;
+                height: auto;
+                margin-top: 6rem;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                gap: 1rem;
+
+                & svg {
+                    width: 4rem;
+                    height: 4rem;
+                    object-fit: contain;
+                    fill: $colorIcons;
+                }
+            }
+
+            &-title {
+                width: 100%;
+                height: auto;
+                margin-top: 2.5rem;
+                font-family: "Montserrat", sans-serif;
+                font-size: 3.5rem;
+                font-weight: 700;
+                color: #FFFFFF;
+
+                & span {
+                    color: $azulMarca;
+                }
+            }
+
+            &-text {
+                width: 100%;
+                height: auto;
+                margin-top: 2.5rem;
+                display: flex;
+                flex-direction: column;
+                gap: 1.5rem;
+                font-family: "Open Sans", sans-serif;
+                font-size: 1.5rem;
+                color: #FFFFFF;
+
+                & p {
+                    font-weight: 500;
+                }
+            }
+
+            &-button {
+                width: 100%;
+                height: auto;
+                margin-top: 6rem;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+
+                &-cta {
+                    width: 100%;
+                    height: auto;
+                    border: solid .25rem #FFFFFF;
+                    border-radius: 1.5rem;
+                    padding: 1.5rem .5rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 1rem;
+                    background-color: $azulMarca;
+                    font-family: "Roboto Slab", sans-serif;
+                    text-decoration: none;
+                    outline: none;
+                    transition: all .25s cubic-bezier(.42,0,.37,.99);
+
+                    &:hover {
+                        background-color: $azulMarcaClaro;
+                        cursor: pointer;
+                    }
+
+                    &:focus {
+                        outline: none;
+                    }
+
+                    & span {
+                        font-size: 1.5rem;
+                        font-weight: 500;
+                        color: #FFFFFF;
+                    }
+
+                    & svg {
+                        width: 1.5rem;
+                        height: auto;
+                        object-fit: contain;
+                        fill: #FFFFFF;
+                    }
+                }
+            }
+            
+        }
+
+        &-picture {
+            width: 90%;
+            min-width: 288px;
+            height: auto;
+            margin: 0 auto;
+            margin-top: 4rem;
+
+            & img {
+                width: 100%;
+                height: auto;
+                border-radius: 2rem;
+                object-fit: contain;
+            }
+        }
+
+    }
+
+}
+
+.pdexgroup__go, .pdexgroup__offices {
+    @include boxContent();
+}
+
+.pdexgroup__offices {
+    &-info-button-cta {
+        background: $azulMarca;
+    }
+}
+
+.pdexgroup__industry, .pdexgroup__quality {
+    @include boxRevertContent();
+}
+
+.pdexgroup__industry {
+    &-info-button-cta {
+        background: $azulMarca;
+    }
+}
+
+.pdexgroup__footer {
+
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    margin: 0 auto;
+    padding: 4rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: #0E1120;
+
+    &-content {
+
+        width: 100%;
+        min-width: 320px;
+        height: auto;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+
+        &-info {
+            width: 90%;
+            min-width: 288px;
+            height: auto;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 4rem;
+
+            &-brand {
+                width: 100%;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 1rem;
+
+                &-logo {
+                    width: 60%;
+                    height: auto;
+
+                    & img {
+                        width: 100%;
+                        height: auto;
+                        object-fit: contain;
+                        image-rendering: crisp-edges;
+                    }
+                }
+
+                &-text {
+                    width: 100%;
+                    height: auto;
+                    margin: 0 auto;
+                    margin-top: 2rem;
+                    font-family: "Montserrat", sans-serif;
+                    font-weight: 500;
+                    font-size: 1.5rem;
+                    color: #FFFFFF;
+                    text-align: center;
+                }
+            }
+
+            &-menu {
+                width: 100%;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+
+                &-title {
+                    font-family: "Montserrat", sans-serif;
+                    font-weight: 600;
+                    font-size: 2rem;
+                    color: #FFFFFF;
+                    text-align: center;
+                }
+
+                &-text {
+                    width: 100%;
+                    height: auto;
+                    margin: 0 auto;
+                    font-family: "Open Sans", sans-serif;
+                    font-weight: 300;
+                    font-size: 1.8rem;
+                    text-align: center;
+                    color: #FFFFFF;
+                }
+
+                &-list {
+                    width: 100%;
+                    height: auto;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 1rem;
+                    list-style: none;
+
+                    & a {
+                        color: #FFFFFF;
+                        text-decoration: none;
+                        text-align: center;
+                        font-family: "Open Sans", sans-serif;
+                        font-size: 1.8rem;
+                        font-weight: 500;
+                    }
+                }
+
+            }
+
+        }
+
+        &-end {
+            width: 90%;
+            min-width: 288px;
+            height: auto;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            font-family: "Roboto Slab", sans-serif;
+            font-weight: 500;
+            font-size: 1.8rem;
+            color: #FFFFFF;
+        }
+    }
+
+
+
+}
+
+@media(min-width: 1200px) {
+
+.pdexgroup__home {
+
+    &-background {
+        width: 15vw;
+    }
+
+    &-content {
+        width: 90%;
+        margin: 0 auto;
+        padding: 4vw 0;
+        display: grid;
+        grid-template-columns: 5fr 7fr;
+
+        &-info {
+            width: 100%;
+            justify-content: flex-start;
+
+            &-logo {
+
+                & img {
+                    width: 15vw;
+                }
+            }
+
+            &-icons {
+                margin-top: 4vw;
+                gap: 1vw;
+
+                & svg {
+                    width: 2.5vw;
+                    height: 3vw;
+                }
+            }
+
+            &-title {
+                margin-top: 1.5vw;
+                font-size: 3.8vw;
+                font-weight: 600;
+                line-height: 4.2vw;
+            }
+
+            &-text {
+                gap: 1.5vw;
+                margin-top: 1.5vw;
+                font-size: 1.25vw;
+            }
+
+            &-button {
+                margin-top: 2vw;
+
+                &-cta {
+                    width: 22.5vw;
+                    border: solid .2vw #FFFFFF;
+                    border-radius: 1.1vw;
+                    padding: 1vw 3vw;
+                    gap: 1vw;
+
+                    & span {
+                        font-size: 1.2vw;
+                    }
+
+                    & svg {
+                        width: 1.2vw;
+                    }
+                }
+            }
+            
+        }
+
+        &-picture {
+            width: 100%;
+            margin-top: 0;
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-end;
+
+            & img {
+                width: 95%;
+                border-radius: 2vw;
+            }
+        }
+    }
+
+
+
+}
+
+.pdexgroup__footer {
+
+    padding: 4vw 0;
+
+    &-content {
+        gap: 4vw;
+
+        &-info {
+            width: 90%;
+            min-width: 288px;
+            height: auto;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-auto-rows: auto;
+            gap: 4vw;
+
+            &-brand {
+                align-items: flex-start;
+                gap: 2vw;
+
+                &-logo {
+                    width: 40%;
+                }
+
+                &-text {
+                    margin-top: 0;
+                    font-size: 1.2vw;
+                    text-align: left;
+                }
+            }
+
+            &-menu {
+                gap: 2vw;
+
+                &-title {
+                    font-size: 2vw;
+                    text-align: left;
+                }
+
+                &-text {
+                    font-size: 1.1vw;
+                    text-align: left;
+                }
+
+                &-list {
+                    align-items: flex-start;
+                    gap: 1vw;
+
+                    & a {
+                        font-size: 1.3vw;
+                        font-weight: 400;
+                    }
+                }
+
+            }
+
+        }
+
+        &-end {
+            font-size: 1.2vw;
+        }
+    }
+
+
+
+}
+
+}

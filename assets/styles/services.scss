@@ -1,0 +1,13 @@
+@import "./mixins";
+
+$colorIcons: #0F1327;
+$azulMarca: #3A4EA5;
+$azulMarcaClaro: #4058C2;
+
+.pdexgroup__services-initial {
+    @include boxContent();
+}
+
+.pdexgroup__services-gear {
+    @include boxRevertContent();
+}

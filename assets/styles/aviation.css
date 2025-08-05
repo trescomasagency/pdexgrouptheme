@@ -1,0 +1,706 @@
+.aviation__left {
+  position: relative;
+  z-index: 0;
+  width: 100%;
+  min-width: 320px;
+  height: auto;
+  padding: 4rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: hidden;
+}
+.aviation__left::before {
+  position: absolute;
+  top: -10%;
+  left: -10%;
+  z-index: -1;
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  background-color: black;
+  content: "";
+  background: radial-gradient(circle, rgba(58, 78, 167, 0.1) 0%, transparent 70%);
+  -webkit-animation: gradientBlueCotent cubic-bezier(0.61, 0.02, 0.48, 1) 20s infinite;
+          animation: gradientBlueCotent cubic-bezier(0.61, 0.02, 0.48, 1) 20s infinite;
+}
+@-webkit-keyframes gradientBlueCotent {
+  0% {
+    top: -10%;
+    left: -10%;
+  }
+  25% {
+    top: 80%;
+    left: -10%;
+  }
+  50% {
+    top: 80%;
+    left: 80%;
+  }
+  75% {
+    top: -10%;
+    left: 80%;
+  }
+  100% {
+    top: -10%;
+    left: -10%;
+  }
+}
+@keyframes gradientBlueCotent {
+  0% {
+    top: -10%;
+    left: -10%;
+  }
+  25% {
+    top: 80%;
+    left: -10%;
+  }
+  50% {
+    top: 80%;
+    left: 80%;
+  }
+  75% {
+    top: -10%;
+    left: 80%;
+  }
+  100% {
+    top: -10%;
+    left: -10%;
+  }
+}
+.aviation__left::after {
+  position: absolute;
+  bottom: -10%;
+  right: -10%;
+  z-index: -1;
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  background-color: black;
+  content: "";
+  background: radial-gradient(circle, rgba(58, 167, 100, 0.1) 0%, transparent 70%);
+  -webkit-animation: gradientGreenContent cubic-bezier(0.61, 0.02, 0.48, 1) 20s infinite;
+          animation: gradientGreenContent cubic-bezier(0.61, 0.02, 0.48, 1) 20s infinite;
+}
+@-webkit-keyframes gradientGreenContent {
+  0% {
+    bottom: -10%;
+    right: -10%;
+  }
+  25% {
+    bottom: 80%;
+    right: -10%;
+  }
+  50% {
+    bottom: 80%;
+    right: 80%;
+  }
+  75% {
+    bottom: -10%;
+    right: 80%;
+  }
+  100% {
+    bottom: -10%;
+    right: -10%;
+  }
+}
+@keyframes gradientGreenContent {
+  0% {
+    bottom: -10%;
+    right: -10%;
+  }
+  25% {
+    bottom: 80%;
+    right: -10%;
+  }
+  50% {
+    bottom: 80%;
+    right: 80%;
+  }
+  75% {
+    bottom: -10%;
+    right: 80%;
+  }
+  100% {
+    bottom: -10%;
+    right: -10%;
+  }
+}
+.aviation__left-info {
+  width: 90%;
+  min-width: 288px;
+  height: auto;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.aviation__left-info-picture {
+  width: 50%;
+  height: auto;
+}
+.aviation__left-info-picture img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+  image-rendering: crisp-edges;
+}
+.aviation__left-info-title {
+  width: 100%;
+  height: auto;
+  margin-top: 2.5rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #1B1B1B;
+}
+.aviation__left-info-title span {
+  color: #3A4EA5;
+}
+.aviation__left-info-subtitle {
+  width: 100%;
+  height: auto;
+  margin-top: 2.5rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1B1B1B;
+}
+.aviation__left-info-subtitle span {
+  color: #3A4EA5;
+}
+.aviation__left-info-text {
+  width: 100%;
+  height: auto;
+  margin-top: 2.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.5rem;
+  color: #000000;
+}
+.aviation__left-info-text p {
+  font-weight: 500;
+}
+.aviation__left-info-button {
+  width: 100%;
+  height: auto;
+  margin-top: 2.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.aviation__left-info-button-cta {
+  width: 100%;
+  height: auto;
+  border-radius: 1.5rem;
+  padding: 1.5rem 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+  color: #FFFFFF;
+  background: -webkit-gradient(linear, left top, right top, from(#3EE65C), to(#2CD44C));
+  background: linear-gradient(90deg, #3EE65C, #2CD44C);
+  font-family: "Roboto Slab", sans-serif;
+  text-decoration: none;
+  outline: none;
+  -webkit-transition: all 0.25s cubic-bezier(0.42, 0, 0.37, 0.99);
+  transition: all 0.25s cubic-bezier(0.42, 0, 0.37, 0.99);
+}
+.aviation__left-info-button-cta:hover {
+  background-color: #4058C2;
+  cursor: pointer;
+}
+.aviation__left-info-button-cta:focus {
+  outline: none;
+}
+.aviation__left-info-button-cta span {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #FFFFFF;
+}
+.aviation__left-info-button-cta svg {
+  width: 2rem;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+  fill: #FFFFFF;
+}
+.aviation__left-picture {
+  width: 90%;
+  min-width: 288px;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 4rem;
+}
+.aviation__left-picture img {
+  width: 100%;
+  height: auto;
+  border-radius: 2rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+  image-rendering: crisp-edges;
+  -webkit-animation: imageLevitate 5s cubic-bezier(0.61, 0.02, 0.48, 1) infinite;
+          animation: imageLevitate 5s cubic-bezier(0.61, 0.02, 0.48, 1) infinite;
+}
+@-webkit-keyframes imageLevitate {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-1%);
+            transform: translateY(-1%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+@keyframes imageLevitate {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-1%);
+            transform: translateY(-1%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+@media (min-width: 1200px) {
+  .aviation__left {
+    width: 90%;
+    min-width: 320px;
+    height: auto;
+    margin: 0 auto;
+    padding: 4vw 0;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 5fr 4vw 6fr;
+    grid-template-columns: 5fr 6fr;
+    grid-auto-rows: auto;
+    gap: 4vw;
+  }
+  .aviation__left::before {
+    width: 30vw;
+    height: 30vw;
+  }
+  .aviation__left::after {
+    width: 30vw;
+    height: 30vw;
+  }
+  .aviation__left-info, .aviation__left-picture {
+    width: 100%;
+  }
+  .aviation__left-info-picture {
+    width: 15vw;
+  }
+  .aviation__left-info-title {
+    margin-top: 2vw;
+    font-size: 3.5vw;
+    line-height: 3.5vw;
+  }
+  .aviation__left-info-subtitle {
+    margin-top: 2.5vw;
+    font-size: 2vw;
+    font-weight: 700;
+    color: #1B1B1B;
+  }
+  .aviation__left-info-subtitle span {
+    color: #3A4EA5;
+  }
+  .aviation__left-info-text {
+    width: 90%;
+    margin-top: 2.5vw;
+    gap: 2vw;
+    font-size: 1.25vw;
+    font-weight: 500;
+  }
+  .aviation__left-info-button {
+    width: 100%;
+    height: auto;
+    margin-top: 2.5vw;
+  }
+  .aviation__left-info-button-cta {
+    width: 22.5vw;
+    border-radius: 1.5vw;
+    padding: 1vw 0.5vw;
+    gap: 1vw;
+  }
+  .aviation__left-info-button-cta span {
+    font-size: 1.2vw;
+  }
+  .aviation__left-info-button-cta svg {
+    width: 2vw;
+  }
+  .aviation__left-picture img {
+    border-radius: 2vw;
+  }
+}
+
+.aviation__banner {
+  position: relative;
+  z-index: 0;
+  width: 100%;
+  min-width: 320px;
+  height: auto;
+  padding: 4rem 0;
+  overflow-x: hidden;
+  color: #FFFFFF;
+  background-color: #0c1024;
+}
+.aviation__banner-curtain {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: -webkit-gradient(linear, left top, right top, from(#0c1024), color-stop(transparent), color-stop(transparent), to(#0c1024));
+  background: linear-gradient(90deg, #0c1024, transparent, transparent, #0c1024);
+}
+.aviation__banner-content {
+  width: 90%;
+  min-width: 288px;
+  height: auto;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2rem;
+  -webkit-animation: bannerAviationScrollRight 60s linear infinite forwards;
+          animation: bannerAviationScrollRight 60s linear infinite forwards;
+}
+@-webkit-keyframes bannerAviationScrollRight {
+  0% {
+    -webkit-transform: translateX(110%);
+            transform: translateX(110%);
+  }
+  100% {
+    -webkit-transform: translateX(-300%);
+            transform: translateX(-300%);
+  }
+}
+@keyframes bannerAviationScrollRight {
+  0% {
+    -webkit-transform: translateX(110%);
+            transform: translateX(110%);
+  }
+  100% {
+    -webkit-transform: translateX(-300%);
+            transform: translateX(-300%);
+  }
+}
+.aviation__banner-content div {
+  width: auto;
+  height: auto;
+  font-family: "Roboto Slab", sans-serif;
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: #FFFFFF;
+}
+.aviation__banner-content div span {
+  width: 150px;
+  height: auto;
+  display: inline-block;
+  text-align: center;
+}
+@media (min-width: 1200px) {
+  .aviation__banner {
+    padding: 4vw 0;
+  }
+  .aviation__banner-content {
+    gap: 2vw;
+  }
+  .aviation__banner-content div {
+    font-size: 1.5vw;
+  }
+  .aviation__banner-content div span {
+    width: 10vw;
+  }
+}
+
+.aviation__right {
+  position: relative;
+  z-index: 0;
+  width: 100%;
+  min-width: 320px;
+  height: auto;
+  padding: 4rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: visible;
+}
+.aviation__right-info {
+  width: 90%;
+  min-width: 288px;
+  height: auto;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.aviation__right-info-picture {
+  width: 50%;
+  height: auto;
+}
+.aviation__right-info-picture img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+  image-rendering: crisp-edges;
+}
+.aviation__right-info-title {
+  width: 100%;
+  height: auto;
+  margin-top: 2.5rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: right;
+  color: #1B1B1B;
+}
+.aviation__right-info-title span {
+  color: #3A4EA5;
+}
+.aviation__right-info-subtitle {
+  width: 100%;
+  height: auto;
+  margin-top: 2.5rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: right;
+  color: #1B1B1B;
+}
+.aviation__right-info-subtitle span {
+  color: #3A4EA5;
+}
+.aviation__right-info-text {
+  width: 100%;
+  height: auto;
+  margin-top: 2.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.5rem;
+  text-align: right;
+  color: #000000;
+}
+.aviation__right-info-text p {
+  font-weight: 500;
+}
+.aviation__right-info-button {
+  width: 100%;
+  height: auto;
+  margin-top: 2.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.aviation__right-info-button-cta {
+  width: 100%;
+  height: auto;
+  border-radius: 1.5rem;
+  padding: 1.5rem 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+  color: #FFFFFF;
+  background: -webkit-gradient(linear, left top, right top, from(#3EE65C), to(#2CD44C));
+  background: linear-gradient(90deg, #3EE65C, #2CD44C);
+  font-family: "Roboto Slab", sans-serif;
+  text-decoration: none;
+  outline: none;
+  -webkit-transition: all 0.25s cubic-bezier(0.42, 0, 0.37, 0.99);
+  transition: all 0.25s cubic-bezier(0.42, 0, 0.37, 0.99);
+}
+.aviation__right-info-button-cta:hover {
+  background-color: #4058C2;
+  cursor: pointer;
+}
+.aviation__right-info-button-cta:focus {
+  outline: none;
+}
+.aviation__right-info-button-cta span {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #FFFFFF;
+}
+.aviation__right-info-button-cta svg {
+  width: 2rem;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+  fill: #FFFFFF;
+}
+.aviation__right-picture {
+  width: 90%;
+  min-width: 288px;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 4rem;
+}
+.aviation__right-picture img {
+  width: 100%;
+  height: auto;
+  border-radius: 2rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+  image-rendering: crisp-edges;
+  -webkit-animation: imageLevitate 5s cubic-bezier(0.61, 0.02, 0.48, 1) infinite;
+          animation: imageLevitate 5s cubic-bezier(0.61, 0.02, 0.48, 1) infinite;
+}
+@keyframes imageLevitate {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-1%);
+            transform: translateY(-1%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+@media (min-width: 1200px) {
+  .aviation__right {
+    width: 90%;
+    min-width: 320px;
+    height: auto;
+    margin: 0 auto;
+    padding: 4vw 0;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 6fr 4vw 5fr;
+    grid-template-columns: 6fr 5fr;
+    grid-auto-rows: auto;
+    gap: 4vw;
+  }
+  .aviation__right-info, .aviation__right-picture {
+    width: 100%;
+  }
+  .aviation__right-info {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .aviation__right-info-picture {
+    width: 15vw;
+  }
+  .aviation__right-info-title {
+    margin-top: 2vw;
+    font-size: 3.5vw;
+    line-height: 3.5vw;
+  }
+  .aviation__right-info-subtitle {
+    margin-top: 2.5vw;
+    font-size: 2vw;
+    font-weight: 700;
+    color: #1B1B1B;
+  }
+  .aviation__right-info-subtitle span {
+    color: #3A4EA5;
+  }
+  .aviation__right-info-text {
+    width: 90%;
+    margin-top: 2.5vw;
+    gap: 2vw;
+    font-size: 1.25vw;
+    font-weight: 500;
+  }
+  .aviation__right-info-button {
+    width: 100%;
+    height: auto;
+    margin-top: 2.5vw;
+  }
+  .aviation__right-info-button-cta {
+    width: 22.5vw;
+    border-radius: 1.5vw;
+    padding: 1vw 0.5vw;
+    gap: 1vw;
+  }
+  .aviation__right-info-button-cta span {
+    font-size: 1.2vw;
+  }
+  .aviation__right-info-button-cta svg {
+    width: 2vw;
+  }
+  .aviation__right-picture {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .aviation__right-picture img {
+    border-radius: 2vw;
+  }
+}

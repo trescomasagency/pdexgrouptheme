@@ -1,0 +1,44 @@
+/*
+Theme Name: Pdexgroup Theme
+Theme URI: #
+Author: Diego Castro
+Author URI: #
+Description: Tema de Pdex Group
+Tags: landing
+Version: 1.0.0
+Requires at least: 5.0
+Tested up to: 5.4
+Requires PHP: 7.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: pdexgroup
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    position: relative;
+    z-index: 0;
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    height: 100vh;
+    background-color: #FFFFFF;
+    overflow-x: hidden;
+}
+
+.pdexgroup {
+    position: relative;
+    z-index: 0;
+    overflow-x: hidden;
+}

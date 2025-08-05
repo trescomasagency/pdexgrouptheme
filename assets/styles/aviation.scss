@@ -1,0 +1,87 @@
+@import "./mixins";
+
+.aviation__left {
+    @include boxContent();
+}
+
+.aviation__banner {
+
+    position: relative;
+    z-index: 0;
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    padding: 4rem 0;
+    overflow-x: hidden;
+    color: #FFFFFF;
+    background-color: #0c1024;
+
+    &-curtain {
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(90deg, #0c1024, transparent, transparent, #0c1024);
+    }
+
+    &-content {
+
+        width: 90%;
+        min-width: 288px;
+        height: auto;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        animation: bannerAviationScrollRight 60s linear infinite forwards;
+
+        @keyframes bannerAviationScrollRight {
+            0% {
+                transform: translateX(110%);
+            } 100% {
+                transform: translateX(-300%);
+            }
+        }
+
+        & div {
+            width: auto;
+            height: auto;
+            font-family: "Roboto Slab", sans-serif;
+            font-weight: 700;
+            font-size: 1.8rem;
+            color: #FFFFFF;
+            
+            & span {
+                width: 150px;
+                height: auto;
+                display: inline-block;
+                text-align: center;
+            }
+        }
+    }
+
+    @media(min-width: 1200px) {
+        padding: 4vw 0;
+
+        &-content {
+
+            gap: 2vw;
+
+            & div {
+                font-size: 1.5vw;
+                
+                & span {
+                    width: 10vw;
+                }
+            }
+        }
+
+    }
+
+}
+
+.aviation__right {
+    @include boxRevertContent();
+}

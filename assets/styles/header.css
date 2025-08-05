@@ -1,0 +1,119 @@
+.pdexgroup__desktop-header {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  .pdexgroup__desktop-header {
+    width: 100%;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: #FFFFFF;
+  }
+  .pdexgroup__desktop-header-content {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    padding: 2vw 0;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 2fr 2vw 7fr 2vw 3fr;
+    grid-template-columns: 2fr 7fr 3fr;
+    grid-auto-rows: auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 2vw;
+  }
+  .pdexgroup__desktop-header-content-logo {
+    width: 100%;
+    height: auto;
+  }
+  .pdexgroup__desktop-header-content-logo a {
+    text-decoration: none;
+  }
+  .pdexgroup__desktop-header-content-logo img {
+    width: 70%;
+    height: auto;
+    image-rendering: crisp-edges;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .pdexgroup__desktop-header-content-nav {
+    width: 100%;
+    height: auto;
+  }
+  .pdexgroup__desktop-header-content-nav-menu {
+    width: 100%;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    gap: 2vw;
+    font-family: "Roboto Slab", sans-serif;
+    font-weight: 500;
+    font-size: 1.1vw;
+    color: #131313;
+    list-style: none;
+  }
+  .pdexgroup__desktop-header-content-nav-menu li {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .pdexgroup__desktop-header-content-nav-menu li a {
+    font-weight: 600;
+    color: #131313;
+    text-decoration: none;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+  .pdexgroup__desktop-header-content-nav-menu li a:hover {
+    color: #4058C2;
+  }
+  .pdexgroup__desktop-header-content-phone {
+    width: 100%;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 1vw;
+  }
+  .pdexgroup__desktop-header-content-phone img {
+    width: 3vw;
+    height: 3vw;
+    -o-object-fit: contain;
+       object-fit: contain;
+    image-rendering: crisp-edges;
+  }
+  .pdexgroup__desktop-header-content-phone a {
+    font-size: 1.1vw;
+    font-weight: 600;
+    font-family: "Open Sans", sans-serif;
+    color: #131313;
+    text-decoration: none;
+  }
+  .pdexgroup__desktop-header-content-phone a img {
+    width: 2vw;
+    height: 2vw;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .pdexgroup__desktop-header-content-phone a img:hover {
+    cursor: pointer;
+  }
+}

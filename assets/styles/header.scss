@@ -1,0 +1,118 @@
+$azulMarcaClaro: #4058C2;
+
+.pdexgroup__desktop-header {
+
+    display: none;
+
+}
+
+@media(min-width: 1200px) {
+.pdexgroup__desktop-header {
+
+    width: 100%;
+    height: auto;
+    display: flex;
+    background-color: #FFFFFF;
+
+    &-content {
+        width: 90%;
+        height: auto;
+        margin: 0 auto;
+        padding: 2vw 0;
+        display: grid;
+        grid-template-columns: 2fr 7fr 3fr;
+        grid-auto-rows: auto;
+        align-items: center;
+        gap: 2vw;
+
+        &-logo {
+            width: 100%;
+            height: auto;
+
+            & a {
+                text-decoration: none;
+            }
+
+            & img {
+                width: 70%;
+                height: auto;
+                image-rendering: crisp-edges;
+                object-fit: contain;
+            }
+        }
+
+        &-nav {
+            width: 100%;
+            height: auto;
+            
+            &-menu {
+                width: 100%;
+                height: auto;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                gap: 2vw;
+                font-family: "Roboto Slab", sans-serif;
+                font-weight: 500;
+                font-size: 1.1vw;
+                color: #131313;
+                list-style: none;
+
+                & li {
+                    margin: 0;
+                    padding: 0;
+                    box-sizing: border-box;
+
+                    & a {
+                        font-weight: 600;
+                        color: #131313;
+                        text-decoration: none;
+                        transition: all .2s ease-in-out;
+
+                        &:hover {
+                            color: $azulMarcaClaro;
+                        }
+                    }
+                }
+            }
+        }
+
+        &-phone {
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 1vw;
+
+            & img {
+                width: 3vw;
+                height: 3vw;
+                object-fit: contain;
+                image-rendering: crisp-edges;
+            }
+
+            & a {
+                font-size: 1.1vw;
+                font-weight: 600;
+                font-family: "Open Sans", sans-serif;
+                color: #131313;
+                text-decoration: none;
+            }
+
+            & a img {
+                width: 2vw;
+                height: 2vw;
+                object-fit: contain;
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+
+    }
+
+}
+}
+
