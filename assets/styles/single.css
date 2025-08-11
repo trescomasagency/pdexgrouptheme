@@ -1,0 +1,188 @@
+.single {
+  width: 100%;
+  min-width: 320px;
+  height: auto;
+  margin: 0 auto;
+  padding: 4rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.single__picture {
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.single__picture img {
+  width: 100%;
+  max-width: 400px;
+  height: 300px;
+  border-radius: 2rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.single__title {
+  width: 90%;
+  min-width: 288px;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 4rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 2.4rem;
+  line-height: 2.8rem;
+  text-align: center;
+}
+.single__title > span {
+  font-family: "Roboto Slab", sans-serif;
+  display: block;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #bbbbbb;
+}
+.single__title p {
+  margin-top: 0.5rem;
+  display: inline-block;
+}
+.single__content {
+  width: 90%;
+  min-width: 288px;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 2rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+}
+.single__content > span {
+  font-family: "Roboto Slab", sans-serif;
+  display: block;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #bbbbbb;
+}
+.single__content p {
+  margin-top: 0.5rem;
+  display: inline-block;
+}
+.single__contact {
+  width: 90%;
+  min-width: 288px;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.single__contact a {
+  width: auto;
+  height: auto;
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1rem;
+  font-family: "Roboto Slab", sans-serif;
+  font-weight: 600;
+  font-size: 1.3rem;
+  color: #FFFFFF;
+  text-decoration: none;
+  background: -webkit-gradient(linear, left top, right top, from(#3EE65C), to(#2CD44C));
+  background: linear-gradient(90deg, #3EE65C, #2CD44C);
+}
+.single__contact a svg {
+  width: 2rem;
+  height: 2rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+  fill: #FFFFFF;
+}
+
+@media (min-width: 1200px) {
+  .single {
+    padding: 4vw 0;
+  }
+  .single__picture {
+    margin: 0 auto;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .single__picture img {
+    max-width: 24vw;
+    height: 20vw;
+    border-radius: 1vw;
+    image-rendering: optimizeQuality;
+  }
+  .single__title {
+    margin-top: 2vw;
+    font-size: 2vw;
+    text-align: left;
+  }
+  .single__title > span {
+    font-family: "Roboto Slab", sans-serif;
+    font-size: 0.9vw;
+  }
+  .single__title > p {
+    margin-top: 0.5vw;
+    display: inline-block;
+  }
+  .single__content {
+    margin-top: 2vw;
+    font-size: 1.2vw;
+    line-height: 1.5vw;
+    text-align: left;
+  }
+  .single__content > span {
+    font-family: "Roboto Slab", sans-serif;
+    font-size: 0.9vw;
+  }
+  .single__content > p {
+    margin-top: 0.5vw;
+    display: inline-block;
+  }
+  .single__contact {
+    margin-top: 2vw;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .single__contact a {
+    border-radius: 1vw;
+    padding: 1vw 2vw;
+    gap: 0.85vw;
+    font-size: 1.2vw;
+  }
+  .single__contact a svg {
+    width: 1.25vw;
+    height: 1.25vw;
+  }
+}

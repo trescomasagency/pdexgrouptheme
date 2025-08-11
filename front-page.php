@@ -8,7 +8,7 @@
 
         <div class="pdexgroup__home-content-info">
 
-            <h1 class="pdexgroup__home-content-info-title">We connect the world, by air, sea, and land</h1>
+            <h1 class="pdexgroup__home-content-info-title">We connect the World by Air-Sea-Land</h1>
             <div class="pdexgroup__home-content-info-text">
                 <p>At Pdex, we <strong>specialize in the export, manufacturing, distribution, and strategic procurement</strong> of high-quality components and systems for the <strong>telecommunications, electrical, and aviation industries</strong>, as well as parts and equipment for heavy machinery and tractors used in mining operations.</p>
                 <p>With a deep understanding of global supply chains and <strong>industry-specific</strong>, we deliver tailored solutions that ensure reliability, efficiency, and performance across critical sectors worldwide.</p>

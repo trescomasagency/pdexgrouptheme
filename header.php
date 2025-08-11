@@ -1,3 +1,4 @@
+<?php get_template_part('template-parts/content', 'location'); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,6 +7,44 @@
     <?php wp_head(); ?>
 </head>
 <body>
+    <!-- Mobile -->
+    <header class="pdexgroup__mobile-header" id="header-mobile">
+        <div class="pdexgroup__mobile-header-logo">
+            <?= the_custom_logo(); ?>
+        </div>
+        <div class="pdexgroup__mobile-header-burger">
+            <button class="pdexgroup__mobile-header-burger-button" value="close">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+    <div class="pdexgroup__mobile-menu" id="pdexgroup-mobile-menu" style="display:none;">
+        <?php if(str_contains( $_SERVER["REQUEST_URI"], "inicio") || str_contains( $_SERVER["REQUEST_URI"], "nosotros") || str_contains( $_SERVER["REQUEST_URI"], "servicios") || str_contains( $_SERVER["REQUEST_URI"], "contacto") || str_contains( $_SERVER["REQUEST_URI"], "productos") || str_contains( $_SERVER["REQUEST_URI"], "aviacion")): ?>
+        <?php 
+            wp_nav_menu(array(
+                'theme_location'    => 'menu_desktop_spanish',
+                'container'         => 'nav',
+                'container_class'   => 'pdexgroup__desktop-header-content-nav',
+                'menu_class'        => 'pdexgroup__desktop-header-content-nav-menu'
+            ));
+        ?>
+        <?php else: ?>
+        <?php 
+            wp_nav_menu(array(
+                'theme_location'    => 'menu_desktop',
+                'container'         => 'nav',
+                'container_class'   => 'pdexgroup__desktop-header-content-nav',
+                'menu_class'        => 'pdexgroup__desktop-header-content-nav-menu'
+            ));
+        ?>
+        <?php endif; ?>
+        <div class="pdexgroup__mobile-menu-phone">
+            <a href="<?= home_url(); ?>"><img src="<?= get_template_directory_uri(); ?>/assets/icons/flags/usa.png" alt=""></a>
+            <a href="<?= home_url('inicio'); ?>"><img src="<?= get_template_directory_uri(); ?>/assets/icons/flags/spain.png" alt=""></a>
+        </div>
+    </div>
     <!-- Desktop -->
     <?php if(str_contains( $_SERVER["REQUEST_URI"], "inicio") || str_contains( $_SERVER["REQUEST_URI"], "nosotros") || str_contains( $_SERVER["REQUEST_URI"], "servicios") || str_contains( $_SERVER["REQUEST_URI"], "contacto") || str_contains( $_SERVER["REQUEST_URI"], "productos") || str_contains( $_SERVER["REQUEST_URI"], "aviacion")): ?>
     <header class="pdexgroup__desktop-header">
